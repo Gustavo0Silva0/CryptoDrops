@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.balance {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mining-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.miner-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miner-info img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.mining-section button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.mining-section button:hover {
+    background-color: #218838;
+}
+
+.carousel {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.miner-carousel .miner-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Estilização dos botões de avançar e voltar do carrossel */
+.slick-prev, .slick-next {
+    background-color: #28a745 !important;
+    color: #000 !important;
+    border-radius: 8px; /* Remover bordas arredondadas */
+    width: 57px;
+    height: 30px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: #218838 !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 16px;
+    color: #000;
+}
