@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:wght@300&display=swap');
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Estilos para o corpo da página */
+body {
+  overflow-x: hidden;
+}
+
+/* Estilos para a navbar fixa */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #202020;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .btn-expandir {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilos para a barra lateral de navegação */
+.menu-lateral {
+  width: 0;
+  height: 100vh;
+  background-color: #202020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  box-shadow: 3px 0 0 #5cb85c;
+  z-index: 900;
+  padding-top: 60px;
+}
+
+.menu-lateral.expandir {
+  width: 300px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-menu {
+  transition: background-color 0.2s;
+}
+
+.item-menu:hover {
+  background-color: #5cb85c;
+}
+
+.item-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: 18px;
+}
+
+.item-menu .icon {
+  margin-right: 10px;
+}
+
+.item-menu .txt-link {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.menu-lateral.expandir .txt-link {
+  opacity: 1;
+}
+
+.content {
+  margin-top: 60px;
+}
